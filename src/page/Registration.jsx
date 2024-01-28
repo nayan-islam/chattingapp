@@ -90,6 +90,7 @@ const Registration = () => {
         })
         .catch((error) => {
           if (error.code.includes("auth/email-already-in-use")) {
+            setLoading(false)
             setEmailerr("Email already in use");
           }
         });
@@ -207,7 +208,7 @@ const Registration = () => {
           <p className="text-base text-white/70">
             Already have an account ?{" "}
             <span className="text-red-500 cursor-pointer">
-              <Link to="/login">Sign in</Link>
+              <Link to="/">Sign in</Link>
             </span>
           </p>
         </div>

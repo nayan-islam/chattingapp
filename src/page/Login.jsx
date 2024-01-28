@@ -34,11 +34,12 @@ const Login = () => {
                 placeholder="Enter your password"
               />
             </fieldset>
-            <input
-              className="py-2 bg-blue-300 hover:bg-blue-600 hover:text-white transition-all duration-200  w-full mt-5 mb-7 rounded cursor-pointer"
-              type="button"
-              value="Login to Continue"
-            />
+            <Link
+              className="py-2 text-center bg-blue-300 hover:bg-blue-600 hover:text-white transition-all duration-200  w-full mt-5 mb-7 rounded cursor-pointer"
+              to="/home"
+            >
+              Login to Continue
+            </Link>
           </div>
           <p className="text-base text-white/70">
             Don’t have an account ?{" "}
